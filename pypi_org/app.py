@@ -12,9 +12,14 @@ def get_latest_packages():
 
 
 @app.route("/")
-def hello_world():
+def home():
     test_packages = get_latest_packages()
     return flask.render_template("index.html", packages=test_packages)
+
+
+@app.route("/about")
+def about():
+    return flask.render_template("about.html")
 
 
 if __name__ == "__main__":

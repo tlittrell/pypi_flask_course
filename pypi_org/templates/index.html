@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Python Package Index</title>
-</head>
-<body>
+{% extends "_layout.html" %}
+{% block main_content %}
 
-<h1>Hello world!</h1>
+<h1>Python Package Index (demo)</h1>
 <h2>Packages:</h2>
 {% for p in packages %}
 <div>
@@ -19,5 +14,4 @@
 </div>
 {% endfor %}
 
-</body>
-</html>
+{% endblock %}
