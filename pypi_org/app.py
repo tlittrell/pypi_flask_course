@@ -14,6 +14,7 @@ def get_latest_packages():
 @app.route("/")
 def home():
     test_packages = get_latest_packages()
+    # return {"packages": test_packages}
     return flask.render_template("home/index.html", packages=test_packages)
 
 
